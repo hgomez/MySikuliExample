@@ -40,6 +40,6 @@ public class MySecondSikuliTest extends Utilities {
         }
         // convert is from ImageMagick
         Process proc = Runtime.getRuntime().exec("convert " + pngs + " +append src/images/" + resultPng + ".png");
-        proc.waitFor(20, TimeUnit.SECONDS);
+        proc.waitFor(20L, TimeUnit.SECONDS);
     }
 }
